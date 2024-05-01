@@ -21,3 +21,12 @@ let y: null= null
  let friends : string[]= [ 'rachel', 'konika', 'bonni', 'ana hathway']
 
  let eligibleRollList : number[] = [ 34, 67 , 78 , 23]
+
+
+
+
+//  * Tuple --> array --> order --> type of values 
+
+let coordinates : [ number, number]= [1,4]
+
+let ageName : [ string, boolean, number] = [ 'tulip flower', true, 60]
