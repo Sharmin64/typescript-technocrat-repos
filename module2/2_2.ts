@@ -1,46 +1,35 @@
 {
 
-
-
-
 // interface 
-interface Abuser {
+
+type User1= {
     name:string;
-    age: number;
-    role: string;
-    isMarried:boolean;
+    age:number
 }
 
-const abuser:Abuser ={
-name:'sharmin sultana',
-age:70,
-role:'Development learner',
-isMarried:false,
-
-}
-
-
-// type 
-type Fuser = {
-    name: string;
+interface User2 {
+    name:string;
     age:number;
-    address:string;
 }
 
-type RoleWithFuser = Fuser & { role: string}
+type UserWithRole1 = User1 & {role : string}
 
-const fuser: RoleWithFuser={
-    name:'safiya',
-    role:'jhograte',
-    age:60,
-    address:'katla tola '
+interface UserWithRole2 extends User2 {
+    role: string
+}
+
+const user1 : UserWithRole2= {
+    name: 'sharmin',
+    age:50, 
+    role:'developer'
+
 }
 
 
-// const fuser: Fuser = {
-//     name:'lizukha',
-//     age:56, 
-//     address:'kohekaf sohor',
-// }
+
+
+
+
+
 
 }
