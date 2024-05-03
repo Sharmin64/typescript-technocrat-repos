@@ -11,14 +11,14 @@
     }
     
     const output1 = kgToGm(1000) as number
-    const output2 = kgToGm('ondho bissas kano korse na nijer motoi kaj korse ') as number
+    const output2 = kgToGm('ondho bissas kano korse na nijer motoi kaj korse ') as string
     console.log( typeof output1);
     console.log(typeof output2);
     
     
 
     function meetSomeOne (guy: string){
-        console.log('Hi kamon aso', guy.toUpperCase() + '!!')
+        console.log('Hi kamon aso onek din dekhi na ', guy.toUpperCase() + '!!')
     }
 
     
