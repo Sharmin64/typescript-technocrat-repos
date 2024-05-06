@@ -14,7 +14,13 @@ type GenericArray<T> = Array<T>
     // const boolArray : Array<boolean> = [true, false, true]
     const boolArray : GenericArray<boolean> = [true, false, true]
     
-const customer:GenericArray <{name:string, age:number, isAlive ?:boolean}> =[
+type VootUser= {
+    name:string;
+    age:number;
+    isAlive?:boolean
+}
+
+const customer:GenericArray <VootUser> =[
     {name:'Khatun ', age:80,}, {name:'ammu',age:60 ,isAlive:false}
 ]
 
